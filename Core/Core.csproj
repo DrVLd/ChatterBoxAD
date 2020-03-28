@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Attachment.cs" />
     <Compile Include="Channel.cs" />
     <Compile Include="Chat.cs" />
     <Compile Include="Message.cs" />

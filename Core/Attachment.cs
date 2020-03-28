@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Core
 {
-    class Attachment
+    public class Attachment
     {
+
     }
 }

@@ -19,6 +19,7 @@ namespace Core
         public Message(long messageID, string textMessage, User msgReceiver, User msgSender, Chat chatField, DateTime messsageDT)
         {
             MessageID = messageID;
+            Attachments = new List<Attachment>();
             TextMessage = textMessage ?? throw new ArgumentNullException(nameof(textMessage));
             MsgReceiver = msgReceiver ?? throw new ArgumentNullException(nameof(msgReceiver));
             MsgSender = msgSender ?? throw new ArgumentNullException(nameof(msgSender));
@@ -29,6 +30,7 @@ namespace Core
         public void AddAttachment(Attachment attachment)
         {
             Attachments.Add(attachment);
+
         }
     }
 }
