@@ -6,7 +6,20 @@
         xmlns:local="clr-namespace:ChatterBoxAD"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+    <Grid Margin="-972,-587,-1061,-639">
+        <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Login" HorizontalAlignment="Left" Margin="1265,877,0,0" VerticalAlignment="Top" Width="171" Height="41" FontFamily="Arial Black" FontSize="20"/>
+        <TextBox HorizontalAlignment="Left" Height="30" Margin="1265,728,0,0" TextWrapping="Wrap" Text="User name" VerticalAlignment="Top" Width="171" FontFamily="Arial" FontSize="16"/>
+        <PasswordBox HorizontalAlignment="Left" Margin="1265,777,0,0" VerticalAlignment="Top" Height="30" RenderTransformOrigin="0.5,0.5" Width="167">
+            <PasswordBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </PasswordBox.RenderTransform>
+        </PasswordBox>
+
     </Grid>
 </Window>

@@ -43,7 +43,7 @@ namespace Core
             }
         }
 
-        public string _password;
+        private string _password;
 
         private long _id;
 
