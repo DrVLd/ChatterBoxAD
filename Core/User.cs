@@ -43,6 +43,13 @@ namespace Core
             }
         }
 
+        public User(long id, string login, string password)
+        {
+            _id = id;
+            Login = login ?? throw new ArgumentNullException(nameof(login));
+            Password = password ?? throw new ArgumentNullException(nameof(password));
+        }
+
         private string _password;
 
         private long _id;
