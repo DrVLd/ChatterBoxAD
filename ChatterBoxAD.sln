@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatterBoxAD", "ChatterBoxA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{8E1F36DD-4F94-45FE-BFBA-7E5DBC4CE2E6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatDataBase", "ChatDataBase\ChatDataBase.csproj", "{12CB9A0C-7114-4DBC-8934-9BD3A3BA9039}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TOTEST_AND_DELETE", "TOTEST_AND_DELETE\TOTEST_AND_DELETE.csproj", "{46C9C862-B436-46CA-A13C-62001F61728F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{8E1F36DD-4F94-45FE-BFBA-7E5DBC4CE2E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E1F36DD-4F94-45FE-BFBA-7E5DBC4CE2E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E1F36DD-4F94-45FE-BFBA-7E5DBC4CE2E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12CB9A0C-7114-4DBC-8934-9BD3A3BA9039}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12CB9A0C-7114-4DBC-8934-9BD3A3BA9039}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12CB9A0C-7114-4DBC-8934-9BD3A3BA9039}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12CB9A0C-7114-4DBC-8934-9BD3A3BA9039}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46C9C862-B436-46CA-A13C-62001F61728F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46C9C862-B436-46CA-A13C-62001F61728F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46C9C862-B436-46CA-A13C-62001F61728F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46C9C862-B436-46CA-A13C-62001F61728F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
