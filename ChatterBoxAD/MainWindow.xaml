@@ -7,7 +7,6 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid Margin="-972,-587,-1061,-639">
-        <Button x:Name="StartBtn" Content="Start Server" HorizontalAlignment="Left" Margin="1265,877,0,0" VerticalAlignment="Top" Width="171" Height="41" FontFamily="Arial Black" FontSize="20" Click="Button_Click"/>
-
+        <Label x:Name="MessagesLbl" Content="Label" HorizontalAlignment="Left" Margin="1193,743,0,0" VerticalAlignment="Top" Height="176" Width="524"/>
     </Grid>
 </Window>
