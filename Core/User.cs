@@ -55,5 +55,10 @@ namespace Core
         private long _id;
 
         private string _login;
+
+        public override string ToString()
+        {
+            return _id + " " + _login + " " + _password;
+        }
     }
 }
