@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -6,26 +7,12 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
-namespace ChatterBoxAD
+namespace Server
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
+    class Program
     {
-        public MainWindow()
-        {
-            InitializeComponent();
+        public Program() {
             threadReceive = new Thread(new ThreadStart(ReceivedByServer));
             threadReceive.Start();
         }
@@ -47,12 +34,10 @@ namespace ChatterBoxAD
                     byte[] messageReceivedByServer = new byte[100];
                     int sizeOfReceivedMessage = temp.Receive(messageReceivedByServer, SocketFlags.None);
                     string str = Encoding.ASCII.GetString(messageReceivedByServer);
-                    MessagesLbl.Content =  "\r\nClient: " + str;
+                    Console.WriteLine("Str " + str);
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message + "\n" + ex.StackTrace + "\n" + ex.HelpLink + "\n" + ex.InnerException
-                            + "\n" + ex.Source + "\n" + ex.TargetSite);
                 }
                 finally
                 {
@@ -60,7 +45,9 @@ namespace ChatterBoxAD
                 }
             }
         }
-
+        static void Main(string[] args)
+        {
+            new Program();
+        }
     }
-
 }

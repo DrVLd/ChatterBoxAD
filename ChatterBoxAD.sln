@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatDataBase", "ChatDataBas
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TOTEST_AND_DELETE", "TOTEST_AND_DELETE\TOTEST_AND_DELETE.csproj", "{46C9C862-B436-46CA-A13C-62001F61728F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csproj", "{DADB67DF-1484-477C-BC12-C23EB0FE68FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,6 +38,10 @@ Global
 		{46C9C862-B436-46CA-A13C-62001F61728F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46C9C862-B436-46CA-A13C-62001F61728F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46C9C862-B436-46CA-A13C-62001F61728F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DADB67DF-1484-477C-BC12-C23EB0FE68FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DADB67DF-1484-477C-BC12-C23EB0FE68FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DADB67DF-1484-477C-BC12-C23EB0FE68FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DADB67DF-1484-477C-BC12-C23EB0FE68FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
