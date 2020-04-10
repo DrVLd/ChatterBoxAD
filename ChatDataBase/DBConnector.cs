@@ -9,7 +9,7 @@ using Org.BouncyCastle.Bcpg;
 
 namespace ChatDataBase
 {
-    class DBMySQLUtils
+    public class DBMySQLUtils
     {
 
         public static MySqlConnection
