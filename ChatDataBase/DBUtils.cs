@@ -28,7 +28,7 @@ namespace ChatDataBase
             string query = "SELECT * FROM heroku_1e57249a9e2bdf7.user where login = '" + login + "' and password = '" + password + "';";
            
             var cmd = new MySqlCommand(query, dbcon);
-            Console.WriteLine("Login data: " + query);
+            Console.WriteLine("Login sql: " + query);
             dbcon.Open();
             MySqlDataReader dataReader = cmd.ExecuteReader();
             dataReader.Read();
@@ -44,7 +44,7 @@ namespace ChatDataBase
             string query = "INSERT INTO user(Login, Password) VALUES(@login, @password)"; 
             dbcon.Open();
             var cmd = new MySqlCommand(query, dbcon);
-            Console.WriteLine("Inserted login data: " + query);
+            Console.WriteLine("Inserted login sql : " + query);
             cmd.Parameters.AddWithValue("@login", login);
             cmd.Parameters.AddWithValue("@password", password);
             cmd.Prepare();
