@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Core;
 using MySql.Data.MySqlClient;
 
 namespace ChatDataBase
@@ -20,5 +21,16 @@ namespace ChatDataBase
             return DBMySQLUtils.GetDBConnection(host, port, database, username, password);
         }
 
+        // Methode for SQL commands to login 
+        public static User Login(string login, string password)
+        {
+            MySqlConnection dbcon = GetDBConnection();
+            string query = "SELECT * FROM heroku_1e57249a9e2bdf7.user where login = '" + login + "' and password = '" + password + "'";
+            var cmd = new MySqlCommand(query, dbcon);
+
+            Console.WriteLine("Login data: " + query);
+
+            return null;
+        }
     }
 }
