@@ -18,19 +18,21 @@ namespace ChatDataBase
             string username = "b03ed90f473d6f";
             string password = "6edaf317";
 
-            return DBMySQLUtils.GetDBConnection(host, port, database, username, password);
+            return DBConnector.GetDBConnection(host, port, database, username, password);
         }
 
         // Methode for SQL commands to login 
         public static User Login(string login, string password)
         {
             MySqlConnection dbcon = GetDBConnection();
-            string query = "SELECT * FROM heroku_1e57249a9e2bdf7.user where login = '" + login + "' and password = '" + password + "'";
-            dbcon.Open();
+            string query = "SELECT * FROM heroku_1e57249a9e2bdf7.user where login = '" + login + "' and password = '" + password + "';";
+           
             var cmd = new MySqlCommand(query, dbcon);
             Console.WriteLine("Login data: " + query);
+            dbcon.Open();
             MySqlDataReader dataReader = cmd.ExecuteReader();
-            User user = new User(dataReader.GetInt32(0),dataReader.GetString(1), dataReader.GetString(2));
+            dataReader.Read();
+            User user = new User(dataReader.GetInt32("UserID"),dataReader.GetString("Login"), dataReader.GetString("Password"));
             dbcon.Close();
             return user;
         }
