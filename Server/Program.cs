@@ -7,6 +7,8 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using ChatDataBase;
+using Core;
 
 namespace Server
 {
@@ -20,6 +22,8 @@ namespace Server
         Thread threadReceive;
         void ReceivedByServer()
         {
+            DBUtils.Registration("ppp", "1111");
+          
             Socket socketReceive = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             int portReceive = 40000;
             IPEndPoint iPEndPointReceive = new IPEndPoint(IPAddress.Parse("127.0.0.1"), portReceive);
